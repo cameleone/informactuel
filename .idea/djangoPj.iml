@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="CompassSettings">
+    <option name="compassConfigPath" value="G:\Projet\djangoPj\drf_sample\static\html\config.rb" />
+    <option name="compassExecutableFilePath" value="C:\Ruby24-x64\lib\ruby\gems\2.4.0\gems\compass-1.0.3\bin\compass" />
+    <option name="compassSupportEnabled" value="true" />
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Django Lib" level="project" />
+  </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/myvenv/Lib/site-packages/django/contrib/gis/templates" />
+      </list>
+    </option>
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="Unittests" />
+  </component>
+</module>

@@ -1,0 +1,23 @@
+.progress {
+margin-bottom: 17px;
+}
+
+.progress-title {
+  line-height: 40px;
+  strong {
+    color: #000
+  }
+
+}
+
+.progress-bar {
+  height: 10px;
+  background-color: #e6e6e6;
+  position: relative;
+  span {
+    background-color: $color;
+    position: absolute;
+    top:0; bottom:0; left:0 ;
+  }
+
+}

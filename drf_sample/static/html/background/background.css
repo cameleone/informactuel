@@ -1,0 +1,127 @@
+
+/****************************
+            BASE
+ ****************************/
+html,body {
+    margin: 0px;
+    padding: 0px;
+
+    line-height: 1.4;
+    font-family: Roboto;
+    font-size: 16px;
+    height: 100%;
+    color: #212121;
+}
+a{ text-decoration: none;color: inherit;}
+
+
+.inf-header{
+    position: fixed;
+    left:0;
+    right:0;
+    height:66px;
+    line-height: 66px;
+    color: #e7e7e7;
+    background-color: #2e27ad;
+}
+
+.site-content{
+    padding-top: 66px;
+}
+
+
+.header-logo{
+    font-weight: bold;
+    padding: 0 25px;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.field {
+    position: relative;
+    height: 10px;
+    padding: 16px 0 8px 0;
+    display: block;
+    left: 0px;
+}
+
+.field-label {
+    line-height: 16px;
+    font-size: 16px;
+    color: #999999;
+    font-weight: 400;
+
+    display: block;
+    position: relative;
+    transform: translateY(40px);
+    -webkit-transition: transform 0.3s, font-size 0.3s;
+    -moz-transition: transform 0.3s, font-size 0.3s;
+    -ms-transition: transform 0.3s, font-size 0.3s;
+    -o-transition: transform 0.3s, font-size 0.3s;
+    transition: transform 0.3s, font-size 0.3s;
+}
+
+.field-input {
+    font-family: Roboto;
+    font-size: 16px;
+    color: #e7e7e7;
+    padding: 8px 0;
+
+    top: 20px;
+    width: 200px;
+    background: transparent;
+    -webkit-appearance: none;
+
+    line-height: 16px;
+    border: none;
+    display: block;
+    position: relative;
+}
+
+.field::after, .field::before {
+    content: '';
+    height: 2px;
+    width: 200px;
+    background-color: #999999;
+    position: absolute;
+    top: 75px;
+}
+
+.field::after {
+    background-color: #1e347b;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.label-has-text .field-label {
+    transform: translateY(0);
+}
+
+.is-focused .field-label {
+    font-size: 12px;
+    color: #1e347b;
+    top: 20px;
+}
+
+.field.is-focused::after {
+    transform: scaleX(1);
+}
+
+img {
+    height: 155px;
+    width: 125px;
+    margin: 3px;
+}

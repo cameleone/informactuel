@@ -1,0 +1,39 @@
+.section-list {
+  height: 780px;
+}
+
+
+
+.all-list {
+  img {
+    width: 150px;
+    height: 200px;
+  }
+  li {
+
+    margin-bottom: 10px;
+    margin-left: 15px;
+    border-bottom:1px solid #FFF;
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #FFF;
+  }
+
+  a{
+    font-size: 12px!important;
+  }
+}
+
+.link-focused .all-list{
+
+  border-bottom: 2px solid $colorTitleBlue;
+
+}
+.section-search {
+  height: 100px;
+  margin-left: 2px;
+}
+
+

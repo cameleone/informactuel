@@ -1,0 +1,80 @@
+<section class="section" ng-controller="movieDetailCtrl" ng-init="detailPageInitFirst()">
+    <div class="l-container">
+        <div class="detail-info">
+            <div>
+                <span class="label-standard">Titre :</span> {{ movieDetail.titre }}
+            </div>
+
+            <div>
+                <span class="label-standard">Genre :</span> {{ movieDetail.genre.description_gen }}
+            </div>
+            <br/>
+            <div>
+                <span class="intitule">Acteurs :</span>
+                <div class="li-detail" ng-repeat="acteur in movieDetail.acteurs">
+                    <li>{{acteur.prenom_act}} {{ acteur.nom_act}}//</li>
+                </div>
+            </div>
+
+            <br/>
+            <div ng-repeat="realisateur in movieDetail.realisateurs">
+                <span class="intitule">Réalisateurs :</span> {{realisateur.prenom_real}} {{ realisateur.nom_real}}
+            </div>
+            <br/>
+            <div><span class="name">Résumé :</span> {{ movieDetail.resume }}</div>
+            <br/>
+            <div><span class="label-standard">Durée :</span> {{ movieDetail.duree }}</div>
+            <!--<div>Bande annonce: {{movieDetail.url_trailer}}</div>-->
+            <!--<br/>-->
+            <div><span class="label-standard">Date de sortie : </span>{{movieDetail.date_sortie | date}}</div>
+            <br/>
+            <p class="detail-panier">Louer le film </p>
+        </div>
+        <div class="detail-trailer">
+            <ng-youtube-embed
+                    video="videoURL"
+                    autoplay="false"
+                    color="white"
+                    disablekb="true"
+                    height="400px"
+                    width="650px"
+                    style="border: 2px solid #bf200c"
+                    style
+            >
+            </ng-youtube-embed>
+        </div>
+
+        <!--<img src="{{ movieDetail.photo }}"/>-->
+
+        <div class="cb"></div>
+
+        <div class="detail-comment">
+            <hr/>
+            <h1 class="detail-titre">Commentaire sur le film</h1>
+
+            <form class="comment-form" ng-init="initFirst()">
+                <div class="comment-list" ng-repeat="comment in comments | filter : {'movie': movieDetail.id}">
+                    <div class="comment-info">
+                        <h3 class="comment-titre">{{comment.author.username}}</h3></br>
+                        <p class="comment-content">{{comment.content}}</p>
+                    </div>
+                </div>
+            </form>
+            <br/>
+            <form class="form form-comment">
+                <div class="comment-new">
+                    <textarea type="text" class="field-textarea" ng-model="newComment.content"></textarea>
+                    <br/>
+                    <button type="submit" ng-click="commenter(newComment)" ng-href="#">envoyer
+                    </button>
+                </div>
+                <a ng-click="louer($event)" ng-href="#/">Louer</a>
+            </form>
+            <hr/>
+        </div>
+
+    </div>
+</section>
+
+
+

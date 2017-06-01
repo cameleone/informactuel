@@ -1,0 +1,4 @@
+/* line 2, ../../sass/module/pagination.scss */
+.pagination-footer ul, .pagination-footer li {
+  text-decoration: none;
+}

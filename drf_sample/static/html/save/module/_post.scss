@@ -1,0 +1,22 @@
+.post{margin-top: 125px;
+
+
+  float: left;
+  width: 555px;
+  height: 500px;
+  position: relative;
+}
+.post-thumb{
+  width: 555px;
+  height: 300px;
+}
+
+.post-content{
+  position: absolute;
+  width: 445px;
+
+  top: 260px;
+  right: 0;
+  left: 150px;
+  background-color:#FFF;
+}

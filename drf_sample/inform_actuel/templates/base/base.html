@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+    <script src="{% static 'module/angular/angular.js' %}"></script>
+    <script src="{% static 'module/angularResource/angular-resource.js' %}"></script>
+    <script src="{% static 'module/AngularRoute/angular-route.js' %}"></script>
+    <script src="{% static 'module/youtubeEmbended/ng-youtube-embed.min.js' %}"></script>
+    <script src="{% static 'module/angular-jwt/angular-jwt.min.js' %}"></script>
+
+
+    <script src="{% static 'module/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'module/jquery/jquery.bxslider.min.js' %}"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'html/stylesheets/movies.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'module/bootstrap/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'module/jquery/css/jquery.bxslider.min.css' %}"/>
+
+
+    <!--<p><a href="/logout/">Deconnexion</a></p>-->
+</head>
+<body ng-app="app">
+<header class="header">
+    <div class="l-container ">
+        <div class="header-logo">
+            <a href="#">
+                <img src="{% static 'img/logo-informactuel-red.png'%}" alt="">
+            </a>
+        </div>
+
+        <div class="header-statut">
+            <p> <a href="/#/">Espace membre </a> <span style="">//</span>  <a href="/logout/">Deconnexion</a></p>
+        </div>
+    </div>
+</header>
+
+
+<section class="section-slide">
+    <div class="l-container">
+        <div class="slide">
+            <div class="block-title">
+                <p>Sortie <span style="color: #FFF">//</span> Bande Annonce </p>
+            </div>
+            <ul class="bxslider clearfix">
+                <li><a href="#"><img src="{% static 'img/Baywatch.jpg'%}"/></a></li>
+                <li><a href="#"><img src="{% static 'img/fast.jpg'%}"/></a></li>
+                <li><a href="#"><img src="{% static 'img/spiderman.jpg'%}"/></a></li>
+                <li><a href="#"><img src="{% static 'img/pirate.jpg'%}"/></a></li>
+                <li><a href="#"><img src="{% static 'img/momie.jpg'%}"/></a></li>
+                <li><a href="#"><img src="{% static 'img/tour.jpg'%}"/></a></li>
+                <li><a href="#"><img src="{% static 'img/tour.jpg'%}"/></a></li>
+                <li><a href="#"><img src="{% static 'img/tour.jpg'%}"/></a></li>
+                <li><a href="#"><img src="{% static 'img/tour.jpg'%}"/></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<div class="bc"></div>
+<div ng-view></div>
+
+
+<script>
+    var $buoop = {vs: {i: 10, f: -4, o: -4, s: 8, c: -4}, api: 4};
+    function $buo_f() {
+        var e = document.createElement("script");
+        e.src = "//browser-update.org/update.min.js";
+        document.body.appendChild(e);
+    };
+    try {
+        document.addEventListener("DOMContentLoaded", $buo_f, false)
+    }
+    catch (e) {
+        window.attachEvent("onload", $buo_f)
+    }
+</script>
+<script src="{% static 'inform_actuel/movie_index.js' %}"></script>
+</body>
+</html>
+
+
+<!--
+**************TUTO START*************
+<header class="header">
+    <div class="l-container clearfix">
+        <a href="#" class="header-logo">
+            <img src="{% static 'img/logo.png' %}" alt="">
+        </a>
+        <nav class="menu">
+            <a href="#" class="menu-item">About</a>
+            <a href="#" class="menu-item">Team</a>
+            <a href="#" class="menu-item is-active">Service</a>
+            <a href="#" class="menu-item">Works</a>
+            <a href="#" class="menu-item">Blog</a>
+            <a href="#" class="menu-item">Contact</a>
+        </nav>
+        <div class="cb"></div>
+        <div class="header-baseline">
+            <div class="header-baseline-l header-baseline-l1"> Best Creative Studio</div>
+            <div class="header-baseline-l header-baseline-l2">Design / Branding / WordPres</div>
+            <div class="header-baseline-l header-baseline-l3">We Make Great Ideas Happen</div>
+        </div>
+        <p>
+            <a href="#" class="btn">Learn more</a>
+        </p>
+    </div>
+</header>
+<section class="section">
+    <div class="l-container">
+        <div class="section-title clearfix">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus earum error
+                fugiat impedit, laudantium maxime modi nesciunt nostrum quae quibusdam ratione
+            </p>
+        </div>
+
+        <div class="about">
+            <div class="about-icon">
+                <i icon icon-bulb>icon</i>
+            </div>
+            <div class="about-text">
+                <h2>Our story</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    quidem sapiente sed suscipit tenetur ullam velit voluptatem?</p>
+                <p>officiis saepe vero, voluptas. Alias deleniti deserunt dolorem iste
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio,
+                    dolorem exercitationem ipsa praesentium ratione recusandae! Assumenda
+                    autem delectus dolorem eum
+                    ipsa magni sapiente. Animi dolorum eaque eius maiores mollitia suscipit!numquam
+                    quam voluptatum? Aliquid cupiditate deserunt iusto minus?</p>
+            </div>
+            <div class="about-design">
+                <div class="about-picture">
+                    <img src="#" alt="our story"/>
+                </div>
+                <div class="cb"></div>
+
+                <div class="progress">
+                    <div class="progress-title">
+                        <strong>Design</strong>/88%
+                    </div>
+                    <div class="progress-bar">
+                        <span style="width:88%"></span>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-title">
+                        <strong>Development</strong>/76%
+                    </div>
+                    <div class="progress-bar">
+                        <span style="width:76%"></span>
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-title">
+                        <strong>Wordpress</strong>/50%
+                    </div>
+                    <div class="progress-bar">
+                        <span style="width:50%"></span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="cb"></div>
+            <hr>
+        </div>
+    </div>
+</section>
+<section class="background">
+    <div class="l-container">
+        <blockquote class="quote-text">
+            dolor sit amet,ue explicabo incidunt libero maiores repellat voluptates!
+        </blockquote>
+        <div class="cb"></div>
+        <cite class="quote-author">
+            Alan Smith
+        </cite>
+    </div>
+</section>
+**************TUTO END*************
+
+
+
+
+
+
+<!--{% verbatim%}
+<div>
+    <label> Recherche :</label>
+    <input type="text" placeholder="titre,acteur,realisateur, etc..." ng-model="query.titre">
+
+    &lt;!&ndash;<button class="btn btn-default" ng-click="search()">Chercher</button>&ndash;&gt;
+
+</div>
+
+
+<div ng-repeat="movie in movies | filter : query">
+
+    <div style="margin-left: 20px;">
+        <div> Type du film : {{movie.type}}</div>
+        <div>titre: <a ng-href="movie/detail/{{movie.id}}">{{ movie.titre }}</a> - {{movie.genre.description_gen}} <br/>
+        </div>
+        <div>
+            <div ng-repeat="acteur in movie.acteurs">
+             {{acteur.prenom_act}} {{ acteur.nom_act}}
+        </div>
+        </div>
+
+        <br/>
+        <div ng-repeat="realisateur in movie.realisateurs">
+            realisateurs: {{realisateur.prenom_real}} {{ realisateur.nom_real}}
+        </div>
+        <br/>
+        <div>résumé: {{ movie.resume }}</div>
+        <br/>
+        <div>Durée: {{ movie.duree }}</div>
+        <br/>
+        <div>Bande annonce: {{movie.url_trailer}}</div>
+        <br/>
+        <div>Date de sortie: {{movie.date_sortie}}</div>
+        <br/>
+        <div>Détail du film: {{movie.url_detail}}</div>
+        <br/>
+        <img src="{{ movie.photo }}"/>
+
+        <hr/>
+
+    </div>
+</div>
+
+<br/>
+
+{% endverbatim %}-->
+<!--<div ng-controller="genreCtrl">
+    <form class="form-inline">
+        <div class="form-group block-level">
+            <input type="text" class="form-control" ng-model="genre.code_gen">
+            <input type="text" class="form-control" ng-model="genre.description_gen">
+
+            <button class="btn btn-default" ng-click="bacler(genre)"> bacler</button>
+        </div>
+    </form>
+</div>-->
+<!-- <script>
+ // Add the CSRF Token
+ var myapp = angular.module('app'); // Not including a list of dependent modules (2nd parameter to `module`) "re-opens" the module for additional configuration
+ myapp.config(['$httpProvider', function($httpProvider) {
+     $httpProvider.defaults.headers.common['X-CSRFToken'] = '{{ csrf_token|escapejs }}';
+ }]);
+ </script>-->

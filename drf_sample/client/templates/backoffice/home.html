@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="{% static 'module/angular/angular.js' %}"></script>
+    <script src="{% static 'module/angularResource/angular-resource.js' %}"></script>
+
+    <p>Vous êtes identifié!</p>
+<p><a href="/logout/">Sortir</a></p>
+</head>
+<body ng-app="app" ng-controller="testCtrl">
+{% verbatim%}
+
+Chain
+<div ng-repeat="chain in chains">
+    <div style="margin-left: 20px;">
+        name: <a ng-href="chain/detail/{{chain.id}}" >{{ chain.name }}</a>  <br/>
+        description: {{ chain.description }} <br/>
+        slogan: {{ chain.slogan }} <br/>
+        founded_date: {{ chain.founded_date }} <br/>
+        website: {{ chain.website }} <br/>
+        <hr/>
+    </div>
+</div>
+
+<br/>
+
+Stores
+<div ng-repeat="store in stores">
+    <div style="margin-left: 20px;">
+        chain: {{ store.chain }} <br/>
+        number: {{ store.number }} <br/>
+        address: {{ store.address }} <br/>
+        opening_date: {{ store.opening_date }} <br/>
+        business_hours_start: {{ store.business_hours_start }} <br/>
+        business_hours_end: {{ store.business_hours_end }} <br/>
+        <hr/>
+    </div>
+</div>
+<br/>
+
+<div>
+    <label > Recherche :</label>
+    <input type="text" ng-model="name">
+    <button class="btn btn-default" ng-click="search()">go</button>
+    <button class="btn btn-default" ng-click="modifier()">update</button>
+    <button class="btn btn-default" ng-click="supprimer()">delete</button>
+
+</div>
+
+<h5>Create a New Chain</h5>
+<form class="form-inline">
+    <div class="form-group block-level">
+        <input type="text" class="form-control" ng-model="chain.name" placeholder="name">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" ng-model="chain.description" placeholder="description">
+    </div>
+
+    <div class="form-group">
+        <input type="text" class="form-control" ng-model="chain.slogan" placeholder="slogan">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" ng-model="chain.founded_date" placeholder="date de création">
+    </div>
+
+    <div class="form-group">
+        <input type="text" class="form-control" ng-model="chain.website" placeholder="site web">
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-default" ng-click="save(chain)">Add Chain</button>
+    </div>
+</form>
+{% endverbatim %}
+
+
+<script src="{% static 'module/client/home.js' %}"></script>
+</body>
+</html>

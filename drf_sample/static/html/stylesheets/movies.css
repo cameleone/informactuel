@@ -1,0 +1,361 @@
+/* line 3, ../sass/_compass.scss */
+body {
+  font-family: Arial;
+  font-size: 16px;
+}
+
+/* line 1, ../sass/base/_base.scss */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #737373;
+  background-color: #030303 !important;
+}
+
+/* line 12, ../sass/base/_base.scss */
+.cb {
+  clear: both;
+}
+
+/* line 16, ../sass/base/_base.scss */
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+/* line 21, ../sass/base/_base.scss */
+a {
+  text-transform: none !important;
+  text-decoration: none !important;
+  color: #d9d9d9 !important;
+  font-weight: bold !important;
+}
+
+/* line 28, ../sass/base/_base.scss */
+.intitule {
+  font-weight: bold;
+  color: #3a89e9;
+}
+
+/* line 34, ../sass/base/_base.scss */
+.name {
+  font-weight: bold;
+  color: #bf200c;
+}
+
+/* line 39, ../sass/base/_base.scss */
+.label-standard {
+  font-weight: bold;
+  color: #FFF;
+}
+
+/* line 44, ../sass/base/_base.scss */
+.slide {
+  margin-left: 13px;
+  margin-right: 25px;
+}
+
+/* line 51, ../sass/base/_base.scss */
+.bxslider li {
+  display: block;
+  float: left;
+}
+/* line 55, ../sass/base/_base.scss */
+.bxslider img {
+  width: 150px;
+  height: 200px;
+}
+
+/* line 64, ../sass/base/_base.scss */
+.block-title p {
+  line-height: 25px;
+  font-size: 16px;
+  font-family: "Open Sans";
+  color: #3a89e9;
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+}
+
+/* line 74, ../sass/base/_base.scss */
+.marge {
+  margin-left: 13px;
+}
+
+/* line 1, ../sass/layout/_container.scss */
+.l-container {
+  max-width: 1600px;
+  min-width: 320px;
+}
+
+/* line 1, ../sass/form/form.scss */
+.field {
+  position: relative;
+  float: left;
+  height: 60px;
+  padding: 38px 0 4px 0;
+  margin-left: 10px;
+}
+
+/* line 13, ../sass/form/form.scss */
+.field-conn {
+  width: 125px;
+}
+
+/* line 17, ../sass/form/form.scss */
+.field-label {
+  color: #bfbfbf;
+  padding: 0;
+  line-height: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  transform: translateY(24px);
+  -webkit-transition: transform 0.3s, font-size 0.3s;
+  -moz-transition: transform 0.3s, font-size 0.3s;
+  -ms-transition: transform 0.3s, font-size 0.3s;
+  -o-transition: transform 0.3s, font-size 0.3s;
+  transition: transform 0.3s, font-size 0.3s;
+}
+
+/* line 35, ../sass/form/form.scss */
+.field-input {
+  position: relative;
+  display: block;
+  background: transparent;
+  padding: 6px 0;
+  margin: 0 0 0 2px;
+  line-height: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #FFF;
+  border: none;
+  -webkit-appearance: none;
+}
+
+/* line 52, ../sass/form/form.scss */
+.field:after, .field:before {
+  content: '';
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  background-color: #e7e7e7;
+}
+
+/* line 63, ../sass/form/form.scss */
+.field:after {
+  background-color: #3a89e9;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+/* line 74, ../sass/form/form.scss */
+.is-focused .field-label {
+  font-size: 12px;
+  color: #3a89e9;
+}
+
+/* line 79, ../sass/form/form.scss */
+.field.is-focused:after {
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* line 87, ../sass/form/form.scss */
+.label-has-text .field-label {
+  transform: translateY(8px);
+  font-size: 12px;
+  color: #3a89e9;
+}
+
+/* line 94, ../sass/form/form.scss */
+.field-search {
+  width: 485px;
+}
+
+/* line 1, ../sass/module/_header.scss */
+.header {
+  height: 92px;
+  padding: 20px;
+  background: linear-gradient(white, grey);
+}
+
+/* line 9, ../sass/module/_header.scss */
+.header-logo {
+  float: left;
+  width: 250px;
+}
+/* line 13, ../sass/module/_header.scss */
+.header-logo img {
+  width: 100%;
+}
+
+/* line 18, ../sass/module/_header.scss */
+.header-connexion {
+  float: right;
+  margin-bottom: 4px;
+  margin-top: -10px;
+}
+
+/* line 25, ../sass/module/_header.scss */
+.header-statut {
+  float: right;
+  padding: 0;
+}
+/* line 29, ../sass/module/_header.scss */
+.header-statut p {
+  margin: 15px 0 10px;
+}
+/* line 31, ../sass/module/_header.scss */
+.header-statut p a {
+  font-weight: bold;
+  font-size: 20px;
+  color: #FFF !important;
+}
+
+/* line 40, ../sass/module/_header.scss */
+.background-fond {
+  position: relative;
+  height: 700px;
+  background: url(img/movie1.gif) no-repeat;
+}
+
+/* line 1, ../sass/module/_btn.scss */
+.btn {
+  border-bottom: none;
+}
+
+/* line 6, ../sass/module/_btn.scss */
+.btn-conn {
+  float: left;
+  background: transparent;
+  margin-top: 15px;
+  margin-left: 0;
+  color: #3a89e9;
+  font-weight: bold;
+}
+
+/* line 16, ../sass/module/_btn.scss */
+.btn-comment {
+  background: none;
+  border-style: none;
+}
+
+/* line 1, ../sass/module/_section.scss */
+.section-list {
+  height: 780px;
+}
+
+/* line 8, ../sass/module/_section.scss */
+.all-list img {
+  width: 150px;
+  height: 200px;
+}
+/* line 12, ../sass/module/_section.scss */
+.all-list li {
+  margin-bottom: 10px;
+  margin-left: 15px;
+  border-bottom: 1px solid #FFF;
+  float: left;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #FFF;
+}
+/* line 24, ../sass/module/_section.scss */
+.all-list a {
+  font-size: 12px !important;
+}
+
+/* line 29, ../sass/module/_section.scss */
+.link-focused .all-list {
+  border-bottom: 2px solid #3a89e9;
+}
+
+/* line 34, ../sass/module/_section.scss */
+.section-search {
+  height: 100px;
+  margin-left: 2px;
+}
+
+/* line 2, ../sass/module/_pagination.scss */
+.pagination-footer .pagination li {
+  padding: 0;
+  pargin: 0;
+  list-style: none;
+  display: block;
+  float: left;
+  text-transform: none;
+  border: 2px solid #e7e7e7;
+}
+/* line 12, ../sass/module/_pagination.scss */
+.pagination-footer .pagination a {
+  font-family: "Open Sans";
+  font-size: 16px;
+  color: #1f1f1f;
+}
+
+/* line 19, ../sass/module/_pagination.scss */
+.section-pagination {
+  margin-left: 0;
+}
+
+/* line 1, ../sass/module/_detail.scss */
+.detail-info {
+  float: left;
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+/* line 8, ../sass/module/_detail.scss */
+.detail-comment {
+  margin: 0;
+  padding: 0;
+  background-color: #1f1f1f;
+  color: #000;
+  text-align: center;
+}
+/* line 17, ../sass/module/_detail.scss */
+.detail-comment h1 {
+  color: #FFF;
+}
+
+/* line 22, ../sass/module/_detail.scss */
+.detail-trailer {
+  float: right;
+  margin-top: 25px;
+  margin-right: 10px;
+}
+
+/* line 28, ../sass/module/_detail.scss */
+.comment-info {
+  border-bottom: 1px dotted #FFF;
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+/* line 36, ../sass/module/_detail.scss */
+.li-detail li {
+  list-style: none;
+  display: block;
+  float: left;
+}
+
+/* line 43, ../sass/module/_detail.scss */
+.detail-panier {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+}

@@ -1,0 +1,44 @@
+.header{
+  height: 92px;
+  padding:20px;
+  //background-color: lighten(#000, 50);
+  background: linear-gradient(white,grey);
+
+}
+
+.header-logo{
+  float: left;
+  width: 250px;
+
+  img{
+    width:100%;
+  }
+}
+
+.header-connexion{
+
+  float: right;
+  margin-bottom: 4px;
+  margin-top: -10px;
+}
+
+.header-statut{
+  float: right;
+  padding:0;
+
+  p{
+    margin: 15px 0 10px;
+    a{
+      font-weight: bold;
+      font-size: 20px;
+     color: #FFF!important;
+  }
+  }
+
+}
+
+.background-fond{
+  position: relative;
+  height:700px;
+   background: url(img/movie1.gif) no-repeat;
+}

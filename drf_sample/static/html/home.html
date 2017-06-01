@@ -1,0 +1,145 @@
+<div ng-controller="homeCtrl" ng-init="homePageInitMovieList()">
+
+    <section class="section-search">
+        <div class="l-container">
+            <div class="field field-search">
+                <label class="field-label">Titre, Acteur, Realisateur ...</label>
+                <input type="text" class="field-input" ng-model="q" ng-change="search()">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-list">
+        <div class="l-container">
+            <div class="block-title marge">
+                <p>Tous les films <span style="color: #FFF">//</span> Toutes les séries</p>
+            </div>
+            <div class="all-list" ng-repeat="movie in movies | orderBy: '-id'">
+                <li>
+                    <img src="{{ movie.photo }}"/>
+                    <br/>
+                    <a class="detail" ng-href="#/movie/{{movie.id}}">{{ movie.titre
+                        }}</a>
+                    <br/>
+                    {{movie.genre.description_gen}}
+                </li>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-pagination modal-footer">
+        <div class="l-container">
+            <div class="pagination-footer">
+                <ul ng-if="pager.pages.length" class="pagination">
+                    <li ng-class="{disabled:pager.currentPage === 1}">
+                        <a ng-click="setPage(1)">Premier</a>
+                    </li>
+                    <li ng-class="{disabled:pager.currentPage === 1}">
+                        <a ng-click="vm.setPage(pager.currentPage - 1)">Précédent</a>
+                    </li>
+                    <li ng-repeat="page in pager.pages" ng-class="{active:pager.currentPage === page}">
+                        <a ng-click="setPage(page)">{{page}}</a>
+                    </li>
+                    <li ng-class="{disabled:pager.currentPage === pager.totalPages}">
+                        <a ng-click="setPage(pager.currentPage + 1)">Suivant</a>
+                    </li>
+                    <li ng-class="{disabled:pager.currentPage === pager.totalPages}">
+                        <a ng-click="setPage(pager.totalPages)">Dernier</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- <div id="inf-conteneur">
+     <div class="container">
+
+         <div class="inf-slide">
+             dfdfsqfjd qfdl
+         </div>
+
+
+         <div class="inf-list">
+             <div class="inf-movie">
+                 <div class="inf-block-movie">
+                     <div class="inf-block-movie-move">
+                         <div class="inf-p-movie inf-detail-movie">
+                             <p> Les nouveautés </p>
+                         </div>
+                         <ul ng-repeat="movie in movies  | limitTo:6" class="body-center-content">
+                             <li class="li-list-movie">
+                                 <img src="{{ movie.photo }}"/>
+                                 <br/>
+                                 <a class="inf-block-movie-content" ng-href="#/movie/{{movie.id}}">{{ movie.titre
+                                     }}</a>
+                                 <br/>
+                                 {{movie.genre.description_gen}}
+                             </li>
+                         </ul>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="clear"></div>
+
+
+             <div class="inf-serie"> dsfdfdsfdsfdsfds</div>
+         </div>
+         <div class="clear"></div>
+     </div>
+ </div>
+
+ <div class="inf-footer">footer</div>-->
+
+<!-- <ul>
+     <li ng-repeat="panier in paniers | filter : {'utilisateur': currentUser.id, 'created_date' : date}">
+         {{panier.movie.titre}}
+     </li>
+ </ul>
+
+-->
+<!--  <div class="page-header"> Deconnexion</div>
+
+  <div class="field">
+      <label for="search" class="field-label">Titre, Acteur, Realisateur ...</label>
+      <input class="field-input" id="search" type="text" ng-model="q" ng-change="search()">
+      &lt;!&ndash;<button class="bt-button" ng-click="search()"> Go</button>&ndash;&gt;
+      &lt;!&ndash;<button class="btn btn-default" ng-click="search()">Chercher</button>&ndash;&gt;
+  </div>
+
+  <div class="cl-body">
+      <div>
+          <ul ng-repeat="movie in movies" class="body-center-content">
+              <li class="li-list-movie">
+                  <img src="{{ movie.photo }}"/>
+                  <br/>
+                  <a ng-href="#/movie/{{movie.id}}">{{ movie.titre }}</a>
+                  <br/>
+                  {{movie.genre.description_gen}}
+              </li>
+          </ul>
+      </div>
+
+      <div class="modal-footer">
+          <ul ng-if="pager.pages.length" class="pagination">
+              <li ng-class="{disabled:pager.currentPage === 1}">
+                  <a ng-click="setPage(1)">Premier</a>
+              </li>
+              <li ng-class="{disabled:pager.currentPage === 1}">
+                  <a ng-click="vm.setPage(pager.currentPage - 1)">Précédent</a>
+              </li>
+              <li ng-repeat="page in pager.pages" ng-class="{active:pager.currentPage === page}">
+                  <a ng-click="setPage(page)">{{page}}</a>
+              </li>
+              <li ng-class="{disabled:pager.currentPage === pager.totalPages}">
+                  <a ng-click="setPage(pager.currentPage + 1)">Suivant</a>
+              </li>
+              <li ng-class="{disabled:pager.currentPage === pager.totalPages}">
+                  <a ng-click="setPage(pager.totalPages)">Dernier</a>
+              </li>
+          </ul>
+      </div>
+  </div>-->
+

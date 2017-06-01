@@ -1,0 +1,76 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Open Sans", sans-serif !important;
+  font-size: 16px;
+  line-height: 1.75;
+  color: lighten(#000, 45);
+  background-color: lighten(#000, 1) !important;
+}
+
+.cb {
+  clear: both;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+a {
+  text-transform: none !important;
+  text-decoration: none !important;
+  color: lighten(#000, 85) !important;
+  font-weight: bold !important;
+}
+
+.intitule {
+  font-weight: bold;
+  color: $colorTitleBlue;
+
+}
+
+.name {
+  font-weight: bold;
+  color: $colorTitleRed;
+}
+
+.label-standard {
+  font-weight: bold;
+  color: #FFF;
+}
+
+.slide {
+  margin-left: 13px;
+  margin-right: 25px;
+
+}
+
+.bxslider {
+  li{
+    display: block;
+    float: left;
+  }
+  img {
+
+    width: 150px;
+    height: 200px;
+  }
+}
+
+.block-title {
+
+  p {
+    line-height: 25px;
+    font-size: 16px;
+    font-family: "Open Sans";
+    color: $colorTitleBlue;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+  }
+}
+
+.marge {
+  margin-left: 13px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Login</title>
+    <script src="{% static 'module/jquery/jquery.min.js' %}"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'html/stylesheets/movies.css' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'module/bootstrap/bootstrap.min.css' %}"/>
+
+
+    <!--<p><a href="/logout/">Deconnexion</a></p>-->
+</head>
+<body>
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post"  role="form" action="/">
+{% csrf_token %}
+<input type="text" name="username" placeholder="Utilisateur">
+<input type="password" name="password" placeholder="Mot de passe">
+<input type="submit" value="login" />
+</form>
+</body>
+</html>-->
+<header class="header">
+    <div class="l-container ">
+        <div class="header-logo">
+            <a href="#">
+                <img src="{% static 'img/logo-informactuel-red.png'%}" alt="">
+            </a>
+        </div>
+
+        <div class="header-connexion">
+            <form class="conn-container" method="post" role="form" action="/">
+                {% csrf_token %}
+                <div class="field field-conn">
+                    <label class="field-label">login</label>
+                    <input type="text" name="username" class="field-input">
+                </div>
+
+                <div class="field field-conn">
+                    <label class="field-label">password</label>
+                    <input type="text" name="password" class="field-input">
+                </div>
+                <div class="field field-conn">
+                    <input type="submit" class="btn btn-conn" value="Se connecter"/>
+                </div>
+                <!--<div>
+                    <label class="login-label">password</label>
+                    <input type="text" class="password-input">
+                </div>
+                 <button class="btn-connexion">se connecter</button>-->
+            </form>
+        </div>
+    </div>
+</header>
+<div class="background">
+    <div class="l-container">
+        <div class="background-fond">
+
+        </div>
+    </div>
+</div>
+<script>
+    var $buoop = {vs: {i: 10, f: -4, o: -4, s: 8, c: -4}, api: 4};
+    function $buo_f() {
+        var e = document.createElement("script");
+        e.src = "//browser-update.org/update.min.js";
+        document.body.appendChild(e);
+    };
+    try {
+        document.addEventListener("DOMContentLoaded", $buo_f, false)
+    }
+    catch (e) {
+        window.attachEvent("onload", $buo_f)
+    }
+</script>
+<script>
+    jQuery(function ($) {
+        $('.field-input').focus(function () {
+            $parent = $(this).parent();
+            if ($(this).val() == '') {
+                $parent.addClass('is-focused');
+            }
+            $(this).parent().addClass('label-has-text');
+        });
+
+        $('.field-input').blur(function () {
+            $parent = $(this).parent();
+            if ($(this).val() == '') {
+                $parent.removeClass('label-has-text');
+            }
+            $parent.removeClass('is-focused');
+        })
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+

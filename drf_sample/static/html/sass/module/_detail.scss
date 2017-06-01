@@ -1,0 +1,47 @@
+.detail-info {
+  float: left;
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.detail-comment {
+  margin: 0;
+  padding: 0;
+
+
+  background-color: $primaryFontColor;
+  color: #000;
+  text-align: center;
+
+  h1{
+    color: #FFF;
+  }
+}
+
+.detail-trailer {
+  float: right;
+  margin-top: 25px;
+  margin-right: 10px;
+}
+
+.comment-info{
+
+  border-bottom: 1px dotted #FFF;
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+.li-detail{
+  li{
+    list-style: none;
+    display: block;
+    float: left;
+  }
+}
+
+.detail-panier{
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+}

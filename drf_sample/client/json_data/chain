@@ -1,0 +1,5 @@
+Chain(  name="gastro",
+        description="pizza de qualité.",
+        slogan="pizza hoan'ny daholobe",
+        founded_date="2014-12-04T20:55:17Z",
+        website="http://www.gastropizza.com")

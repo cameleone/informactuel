@@ -1,0 +1,38 @@
+.about{
+
+}
+
+
+.about-icon{
+  width: 125px;
+  height: 125px;
+
+  border: 2px solid $color;
+  border-radius: 125px;
+
+  float: left;
+  margin-left: 10px;
+
+  text-align: center;
+  line-height: 125px;
+
+}
+.about-text{
+  padding-left: 25px;
+  width: 505px;
+  float: left;
+}
+
+.about-picture{
+  background-color: $color;
+  padding:65px 0 0 40px;
+  float: left;
+  width: 250px;
+
+}
+
+.about-design{
+  float: left;
+  margin-left: 10px;
+}
+

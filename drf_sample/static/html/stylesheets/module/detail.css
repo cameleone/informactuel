@@ -1,0 +1,11 @@
+/* line 1, ../../sass/module/detail.scss */
+.detail-info {
+  float: left;
+  width: 50%;
+}
+
+/* line 6, ../../sass/module/detail.scss */
+.detail-comment {
+  float: right;
+  width: 50%;
+}
